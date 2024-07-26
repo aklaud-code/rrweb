@@ -1,6 +1,6 @@
 {
   "name": "rrweb",
-  "version": "2.0.0-alpha.4",
+  "version": "1.0.0",
   "description": "record and replay the web",
   "scripts": {
     "prepare": "npm run prepack",
@@ -15,7 +15,7 @@
     "bundle": "rollup --config",
     "typings": "tsc -d --declarationDir typings",
     "check-types": "tsc -noEmit",
-    "prepublish": "npm run typings --esModuleInterop=true && npm run bundle",
+    "prepublish": "npm run typings && npm run bundle",
     "lint": "yarn eslint src",
     "benchmark": "jest test/benchmark"
   },
